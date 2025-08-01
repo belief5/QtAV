@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7EBFC31E-23C3-3DD7-AD16-D06CF882345B}</ProjectGuid>
+    <RootNamespace>QMLPlayer</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.26100.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>..\..\lib_win_x86\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\..\.obj\QMLPlayer_win_x86\</IntermediateDirectory>
+    <PrimaryOutput>QMLPlayer</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>..\..\lib_win_x86\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\..\.obj\QMLPlayer_win_x86\</IntermediateDirectory>
+    <PrimaryOutput>QMLPlayer</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">..\..\lib_win_x86\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">..\..\.obj\QMLPlayer_win_x86\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">QMLPlayer</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</IgnoreImportLibrary>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">..\..\lib_win_x86\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">..\..\.obj\QMLPlayer_win_x86\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">QMLPlayer</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\ffmpeg\include;E:\ThirdPartyDataBase\ffmpeg\include;qtquick2applicationviewer;..\common;..\..\examples;E:/GithubProject/QtAV/examples/common/common;D:\Qt\5.15.10\msvc2022_64\include;D:\Qt\5.15.10\msvc2022_64\include\QtQuick;D:\Qt\5.15.10\msvc2022_64\include\QtGui;D:\Qt\5.15.10\msvc2022_64\include\QtANGLE;D:\Qt\5.15.10\msvc2022_64\include\QtSql;D:\Qt\5.15.10\msvc2022_64\include\QtQmlModels;D:\Qt\5.15.10\msvc2022_64\include\QtQml;D:\Qt\5.15.10\msvc2022_64\include\QtNetwork;D:\Qt\5.15.10\msvc2022_64\include\QtCore;..\..\.moc\5.15.10\QMLPlayer;D:\Qt\5.15.10\msvc2022_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\..\.obj\QMLPlayer_win_x86\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>..\..\.obj\QMLPlayer_win_x86\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_WARNINGS;QT_QUICK_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>E:\GithubProject\QtAV\lib_win_x86\commond.lib;User32.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Quickd.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Guid.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Sqld.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5QmlModelsd.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Qmld.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Networkd.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Cored.lib;D:\Qt\5.15.10\msvc2022_64\lib\qtmaind.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\GithubProject\QtAV\ffmpeg\lib\x64;E:\ThirdPartyDataBase\ffmpeg\lib;E:\GithubProject\QtAV\lib_win_x86;&quot;C:\Program Files\OpenSSL-Win64\lib&quot;;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\QMLPlayer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>1.13</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_WARNINGS;QT_QUICK_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\ffmpeg\include;E:\ThirdPartyDataBase\ffmpeg\include;qtquick2applicationviewer;..\common;..\..\examples;E:/GithubProject/QtAV/examples/common/common;D:\Qt\5.15.10\msvc2022_64\include;D:\Qt\5.15.10\msvc2022_64\include\QtQuick;D:\Qt\5.15.10\msvc2022_64\include\QtGui;D:\Qt\5.15.10\msvc2022_64\include\QtANGLE;D:\Qt\5.15.10\msvc2022_64\include\QtSql;D:\Qt\5.15.10\msvc2022_64\include\QtQmlModels;D:\Qt\5.15.10\msvc2022_64\include\QtQml;D:\Qt\5.15.10\msvc2022_64\include\QtNetwork;D:\Qt\5.15.10\msvc2022_64\include\QtCore;..\..\.moc\5.15.10\QMLPlayer;D:\Qt\5.15.10\msvc2022_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\..\.obj\QMLPlayer_win_x86\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>..\..\.obj\QMLPlayer_win_x86\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_WARNINGS;NDEBUG;QT_NO_DEBUG;QT_QUICK_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>E:\GithubProject\QtAV\lib_win_x86\common.lib;User32.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Quick.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Gui.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Sql.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5QmlModels.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Qml.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Network.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Core.lib;D:\Qt\5.15.10\msvc2022_64\lib\qtmain.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\GithubProject\QtAV\ffmpeg\lib\x64;E:\ThirdPartyDataBase\ffmpeg\lib;E:\GithubProject\QtAV\lib_win_x86;&quot;C:\Program Files\OpenSSL-Win64\lib&quot;;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\QMLPlayer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>1.13</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_WARNINGS;NDEBUG;QT_NO_DEBUG;QT_QUICK_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="qtquick2applicationviewer\qtquick2applicationviewer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="qtquick2applicationviewer\qtquick2applicationviewer.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">qtquick2applicationviewer\qtquick2applicationviewer.h;E:\GithubProject\QtAV\.moc\5.15.10\QMLPlayer\moc_predefs.h;D:\Qt\5.15.10\msvc2022_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\5.15.10\msvc2022_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_CRT_SECURE_NO_WARNINGS -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/GithubProject/QtAV/.moc/5.15.10/QMLPlayer/moc_predefs.h -ID:/Qt/5.15.10/msvc2022_64/mkspecs/win32-msvc -IE:/GithubProject/QtAV/examples/QMLPlayer -IE:/GithubProject/QtAV/ffmpeg/include -IE:/ThirdPartyDataBase/ffmpeg/include -IE:/GithubProject/QtAV/examples/QMLPlayer/qtquick2applicationviewer -IE:/GithubProject/QtAV/examples/common -IE:/GithubProject/QtAV/examples -IE:/GithubProject/QtAV/examples/common/common -ID:/Qt/5.15.10/msvc2022_64/include -ID:/Qt/5.15.10/msvc2022_64/include/QtQuick -ID:/Qt/5.15.10/msvc2022_64/include/QtGui -ID:/Qt/5.15.10/msvc2022_64/include/QtANGLE -ID:/Qt/5.15.10/msvc2022_64/include/QtSql -ID:/Qt/5.15.10/msvc2022_64/include/QtQmlModels -ID:/Qt/5.15.10/msvc2022_64/include/QtQml -ID:/Qt/5.15.10/msvc2022_64/include/QtNetwork -ID:/Qt/5.15.10/msvc2022_64/include/QtCore -I&quot;D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include&quot; -I&quot;D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include&quot; -I&quot;D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include&quot; -I&quot;D:\Windows Kits\10\include\10.0.26100.0\ucrt&quot; -I&quot;D:\Windows Kits\10\\include\10.0.26100.0\\um&quot; -I&quot;D:\Windows Kits\10\\include\10.0.26100.0\\shared&quot; -I&quot;D:\Windows Kits\10\\include\10.0.26100.0\\winrt&quot; -I&quot;D:\Windows Kits\10\\include\10.0.26100.0\\cppwinrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -IE:\GithubProject\QtAV\ffmpeg\include qtquick2applicationviewer\qtquick2applicationviewer.h -o E:\GithubProject\QtAV\.moc\5.15.10\QMLPlayer\moc_qtquick2applicationviewer.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC qtquick2applicationviewer/qtquick2applicationviewer.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\GithubProject\QtAV\.moc\5.15.10\QMLPlayer\moc_qtquick2applicationviewer.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">qtquick2applicationviewer\qtquick2applicationviewer.h;E:\GithubProject\QtAV\.moc\5.15.10\QMLPlayer\moc_predefs.h;D:\Qt\5.15.10\msvc2022_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\5.15.10\msvc2022_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_CRT_SECURE_NO_WARNINGS -DNDEBUG -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/GithubProject/QtAV/.moc/5.15.10/QMLPlayer/moc_predefs.h -ID:/Qt/5.15.10/msvc2022_64/mkspecs/win32-msvc -IE:/GithubProject/QtAV/examples/QMLPlayer -IE:/GithubProject/QtAV/ffmpeg/include -IE:/ThirdPartyDataBase/ffmpeg/include -IE:/GithubProject/QtAV/examples/QMLPlayer/qtquick2applicationviewer -IE:/GithubProject/QtAV/examples/common -IE:/GithubProject/QtAV/examples -IE:/GithubProject/QtAV/examples/common/common -ID:/Qt/5.15.10/msvc2022_64/include -ID:/Qt/5.15.10/msvc2022_64/include/QtQuick -ID:/Qt/5.15.10/msvc2022_64/include/QtGui -ID:/Qt/5.15.10/msvc2022_64/include/QtANGLE -ID:/Qt/5.15.10/msvc2022_64/include/QtSql -ID:/Qt/5.15.10/msvc2022_64/include/QtQmlModels -ID:/Qt/5.15.10/msvc2022_64/include/QtQml -ID:/Qt/5.15.10/msvc2022_64/include/QtNetwork -ID:/Qt/5.15.10/msvc2022_64/include/QtCore -I&quot;D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include&quot; -I&quot;D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include&quot; -I&quot;D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include&quot; -I&quot;D:\Windows Kits\10\include\10.0.26100.0\ucrt&quot; -I&quot;D:\Windows Kits\10\\include\10.0.26100.0\\um&quot; -I&quot;D:\Windows Kits\10\\include\10.0.26100.0\\shared&quot; -I&quot;D:\Windows Kits\10\\include\10.0.26100.0\\winrt&quot; -I&quot;D:\Windows Kits\10\\include\10.0.26100.0\\cppwinrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -IE:\GithubProject\QtAV\ffmpeg\include qtquick2applicationviewer\qtquick2applicationviewer.h -o E:\GithubProject\QtAV\.moc\5.15.10\QMLPlayer\moc_qtquick2applicationviewer.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC qtquick2applicationviewer/qtquick2applicationviewer.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\GithubProject\QtAV\.moc\5.15.10\QMLPlayer\moc_qtquick2applicationviewer.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\QtAV\.moc\5.15.10\QMLPlayer\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\5.15.10\msvc2022_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">cl -BxD:\Qt\5.15.10\msvc2022_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E D:\Qt\5.15.10\msvc2022_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;E:\GithubProject\QtAV\.moc\5.15.10\QMLPlayer\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\GithubProject\QtAV\.moc\5.15.10\QMLPlayer\moc_predefs.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\5.15.10\msvc2022_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">cl -BxD:\Qt\5.15.10\msvc2022_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E D:\Qt\5.15.10\msvc2022_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;E:\GithubProject\QtAV\.moc\5.15.10\QMLPlayer\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\GithubProject\QtAV\.moc\5.15.10\QMLPlayer\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\.moc\5.15.10\QMLPlayer\moc_qtquick2applicationviewer.cpp" />
+    <ClCompile Include="..\..\.rcc\5.15.10\QMLPlayer\qrc_qmlplayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="i18n\QMLPlayer.ts" />
+    <None Include="i18n\QMLPlayer_zh_CN.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="qml\QMLPlayer\About.qml" />
+    <None Include="qml\QMLPlayer\AudioPage.qml" />
+    <None Include="qml\QMLPlayer\Button.qml" />
+    <None Include="qml\QMLPlayer\ConfigPanel.qml" />
+    <None Include="qml\QMLPlayer\ControlPanel.qml" />
+    <None Include="qml\QMLPlayer\DelegateItem.qml" />
+    <None Include="qml\QMLPlayer\EffectPage.qml" />
+    <None Include="qml\QMLPlayer\MediaInfoPage.qml" />
+    <None Include="qml\QMLPlayer\Menu.qml" />
+    <None Include="qml\QMLPlayer\MiscPage.qml" />
+    <None Include="qml\QMLPlayer\Page.qml" />
+    <None Include="qml\QMLPlayer\PlayListPanel.qml" />
+    <None Include="qml\QMLPlayer\ProgressBar.qml" />
+    <None Include="i18n\QMLPlayer_zh_CN.qm" />
+    <None Include="qml\QMLPlayer\Slider.qml" />
+    <None Include="qml\QMLPlayer\SubtitlePage.qml" />
+    <None Include="qml\QMLPlayer\VideoCodec.qml" />
+    <None Include="qml\QMLPlayer\main.qml" />
+    <CustomBuild Include="qmlplayer.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">qmlplayer.qrc;D:\Qt\5.15.10\msvc2022_64\bin\rcc.exe;qml\QMLPlayer\PlayListPanel.qml;qml\QMLPlayer\Page.qml;qml\QMLPlayer\About.qml;qml\QMLPlayer\AudioPage.qml;qml\QMLPlayer\ControlPanel.qml;qml\QMLPlayer\ConfigPanel.qml;qml\QMLPlayer\MiscPage.qml;qml\QMLPlayer\Slider.qml;qml\QMLPlayer\Menu.qml;qml\QMLPlayer\EffectPage.qml;qml\QMLPlayer\utils.js;qml\QMLPlayer\SubtitlePage.qml;qml\QMLPlayer\MediaInfoPage.qml;qml\QMLPlayer\VideoCodec.qml;qml\QMLPlayer\ProgressBar.qml;qml\QMLPlayer\Button.qml;qml\QMLPlayer\main.qml;qml\QMLPlayer\DelegateItem.qml;i18n\QMLPlayer_zh_CN.qm;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\5.15.10\msvc2022_64\bin\rcc.exe -name qmlplayer qmlplayer.qrc -o E:\GithubProject\QtAV\.rcc\5.15.10\QMLPlayer\qrc_qmlplayer.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">RCC qmlplayer.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\GithubProject\QtAV\.rcc\5.15.10\QMLPlayer\qrc_qmlplayer.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">qmlplayer.qrc;D:\Qt\5.15.10\msvc2022_64\bin\rcc.exe;qml\QMLPlayer\PlayListPanel.qml;qml\QMLPlayer\Page.qml;qml\QMLPlayer\About.qml;qml\QMLPlayer\AudioPage.qml;qml\QMLPlayer\ControlPanel.qml;qml\QMLPlayer\ConfigPanel.qml;qml\QMLPlayer\MiscPage.qml;qml\QMLPlayer\Slider.qml;qml\QMLPlayer\Menu.qml;qml\QMLPlayer\EffectPage.qml;qml\QMLPlayer\utils.js;qml\QMLPlayer\SubtitlePage.qml;qml\QMLPlayer\MediaInfoPage.qml;qml\QMLPlayer\VideoCodec.qml;qml\QMLPlayer\ProgressBar.qml;qml\QMLPlayer\Button.qml;qml\QMLPlayer\main.qml;qml\QMLPlayer\DelegateItem.qml;i18n\QMLPlayer_zh_CN.qm;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\5.15.10\msvc2022_64\bin\rcc.exe -name qmlplayer qmlplayer.qrc -o E:\GithubProject\QtAV\.rcc\5.15.10\QMLPlayer\qrc_qmlplayer.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">RCC qmlplayer.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\GithubProject\QtAV\.rcc\5.15.10\QMLPlayer\qrc_qmlplayer.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="qml\QMLPlayer\utils.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="android\AndroidManifest.xml" />
+    <None Include="android\src\org\qtav\qmlplayer\QMLPlayerActivity.java" />
+    <None Include="android\build.gradle" />
+    <None Include="android\gradle\wrapper\gradle-wrapper.jar" />
+    <None Include="android\gradle\wrapper\gradle-wrapper.properties" />
+    <None Include="android\gradlew.bat" />
+    <None Include="android\gradlew" />
+    <None Include="android\res\values\libs.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\GithubProject\QtAV\examples\QMLPlayer\QMLPlayer_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

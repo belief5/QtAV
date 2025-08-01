@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{17D99812-20C6-3E05-9310-3D4348B645B7}</ProjectGuid>
+    <RootNamespace>simpleplayer</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.26100.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>..\..\lib_win_x86\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\..\.obj\simpleplayer_win_x86\</IntermediateDirectory>
+    <PrimaryOutput>simpleplayer</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>..\..\lib_win_x86\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\..\.obj\simpleplayer_win_x86\</IntermediateDirectory>
+    <PrimaryOutput>simpleplayer</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\lib_win_x86\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\.obj\simpleplayer_win_x86\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">simpleplayer</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\lib_win_x86\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\.obj\simpleplayer_win_x86\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">simpleplayer</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GithubProject\QtAV\ffmpeg\include;.;..\..\ffmpeg\include;E:\ThirdPartyDataBase\ffmpeg\include;..\..\src;E:\GithubProject\QtAV;..\..\src\QtAV;..\..\widgets;..\..\widgets\QtAVWidgets;D:\Qt\5.15.10\msvc2022_64\include;D:\Qt\5.15.10\msvc2022_64\include\QtWidgets;D:\Qt\5.15.10\msvc2022_64\include\QtGui;D:\Qt\5.15.10\msvc2022_64\include\QtANGLE;D:\Qt\5.15.10\msvc2022_64\include\QtCore;..\..\.moc\5.15.10\simpleplayer;D:\Qt\5.15.10\msvc2022_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\..\.obj\simpleplayer_win_x86\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>..\..\.obj\simpleplayer_win_x86\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>E:\GithubProject\QtAV\lib_win_x86\QtAVd1.lib;E:\GithubProject\QtAV\lib_win_x86\QtAVWidgetsd1.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Widgetsd.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Guid.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Cored.lib;D:\Qt\5.15.10\msvc2022_64\lib\qtmaind.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\GithubProject\QtAV\ffmpeg\lib\x64;E:\ThirdPartyDataBase\ffmpeg\lib;E:\GithubProject\QtAV\lib_win_x86;"C:\Program Files\OpenSSL-Win64\lib";%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\simpleplayer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\ffmpeg\include;E:\ThirdPartyDataBase\ffmpeg\include;..\..\src;E:\GithubProject\QtAV;..\..\src\QtAV;..\..\widgets;E:\GithubProject\QtAV;..\..\widgets\QtAVWidgets;D:\Qt\5.15.10\msvc2022_64\include;D:\Qt\5.15.10\msvc2022_64\include\QtWidgets;D:\Qt\5.15.10\msvc2022_64\include\QtGui;D:\Qt\5.15.10\msvc2022_64\include\QtANGLE;D:\Qt\5.15.10\msvc2022_64\include\QtCore;..\..\.moc\5.15.10\simpleplayer;D:\Qt\5.15.10\msvc2022_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\..\.obj\simpleplayer_win_x86\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>..\..\.obj\simpleplayer_win_x86\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_WARNINGS;NDEBUG;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>E:\GithubProject\QtAV\lib_win_x86\QtAV1.lib;E:\GithubProject\QtAV\lib_win_x86\QtAVWidgets1.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Widgets.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Gui.lib;D:\Qt\5.15.10\msvc2022_64\lib\Qt5Core.lib;D:\Qt\5.15.10\msvc2022_64\lib\qtmain.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\GithubProject\QtAV\ffmpeg\lib;E:\GithubProject\QtAV\ffmpeg\lib\x64;E:\ThirdPartyDataBase\ffmpeg\lib;E:\GithubProject\QtAV\lib_win_x86;C:\Program Files\OpenSSL-Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\simpleplayer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_WARNINGS;NDEBUG;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="playerwindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="playerwindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">playerwindow.h;E:\GithubProject\QtAV\.moc\5.15.10\simpleplayer\moc_predefs.h;D:\Qt\5.15.10\msvc2022_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\5.15.10\msvc2022_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_CRT_SECURE_NO_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/GithubProject/QtAV/.moc/5.15.10/simpleplayer/moc_predefs.h -ID:/Qt/5.15.10/msvc2022_64/mkspecs/win32-msvc -IE:/GithubProject/QtAV/examples/simpleplayer -IE:/GithubProject/QtAV/ffmpeg/include -IE:/ThirdPartyDataBase/ffmpeg/include -IE:/GithubProject/QtAV/src -IE:/GithubProject/QtAV -IE:/GithubProject/QtAV/src/QtAV -IE:/GithubProject/QtAV/widgets -IE:/GithubProject/QtAV -IE:/GithubProject/QtAV/widgets/QtAVWidgets -ID:/Qt/5.15.10/msvc2022_64/include -ID:/Qt/5.15.10/msvc2022_64/include/QtWidgets -ID:/Qt/5.15.10/msvc2022_64/include/QtGui -ID:/Qt/5.15.10/msvc2022_64/include/QtANGLE -ID:/Qt/5.15.10/msvc2022_64/include/QtCore -I"D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include" -I"D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include" -I"D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"D:\Windows Kits\10\include\10.0.26100.0\ucrt" -I"D:\Windows Kits\10\\include\10.0.26100.0\\um" -I"D:\Windows Kits\10\\include\10.0.26100.0\\shared" -I"D:\Windows Kits\10\\include\10.0.26100.0\\winrt" -I"D:\Windows Kits\10\\include\10.0.26100.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" -IE:\GithubProject\QtAV\ffmpeg\include playerwindow.h -o E:\GithubProject\QtAV\.moc\5.15.10\simpleplayer\moc_playerwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC playerwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\GithubProject\QtAV\.moc\5.15.10\simpleplayer\moc_playerwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">playerwindow.h;E:\GithubProject\QtAV\.moc\5.15.10\simpleplayer\moc_predefs.h;D:\Qt\5.15.10\msvc2022_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\5.15.10\msvc2022_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_CRT_SECURE_NO_WARNINGS -DNDEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/GithubProject/QtAV/.moc/5.15.10/simpleplayer/moc_predefs.h -ID:/Qt/5.15.10/msvc2022_64/mkspecs/win32-msvc -IE:/GithubProject/QtAV/examples/simpleplayer -IE:/GithubProject/QtAV/ffmpeg/include -IE:/ThirdPartyDataBase/ffmpeg/include -IE:/GithubProject/QtAV/src -IE:/GithubProject/QtAV -IE:/GithubProject/QtAV/src/QtAV -IE:/GithubProject/QtAV/widgets -IE:/GithubProject/QtAV -IE:/GithubProject/QtAV/widgets/QtAVWidgets -ID:/Qt/5.15.10/msvc2022_64/include -ID:/Qt/5.15.10/msvc2022_64/include/QtWidgets -ID:/Qt/5.15.10/msvc2022_64/include/QtGui -ID:/Qt/5.15.10/msvc2022_64/include/QtANGLE -ID:/Qt/5.15.10/msvc2022_64/include/QtCore -I"D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include" -I"D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include" -I"D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"D:\Windows Kits\10\include\10.0.26100.0\ucrt" -I"D:\Windows Kits\10\\include\10.0.26100.0\\um" -I"D:\Windows Kits\10\\include\10.0.26100.0\\shared" -I"D:\Windows Kits\10\\include\10.0.26100.0\\winrt" -I"D:\Windows Kits\10\\include\10.0.26100.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" -IE:\GithubProject\QtAV\ffmpeg\include playerwindow.h -o E:\GithubProject\QtAV\.moc\5.15.10\simpleplayer\moc_playerwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC playerwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\GithubProject\QtAV\.moc\5.15.10\simpleplayer\moc_playerwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\.moc\5.15.10\simpleplayer\moc_playerwindow.cpp" />
+    <CustomBuild Include="E:\GithubProject\QtAV\.moc\5.15.10\simpleplayer\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\5.15.10\msvc2022_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -BxD:\Qt\5.15.10\msvc2022_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E D:\Qt\5.15.10\msvc2022_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;E:\GithubProject\QtAV\.moc\5.15.10\simpleplayer\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\GithubProject\QtAV\.moc\5.15.10\simpleplayer\moc_predefs.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\5.15.10\msvc2022_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -BxD:\Qt\5.15.10\msvc2022_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E D:\Qt\5.15.10\msvc2022_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;E:\GithubProject\QtAV\.moc\5.15.10\simpleplayer\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\GithubProject\QtAV\.moc\5.15.10\simpleplayer\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

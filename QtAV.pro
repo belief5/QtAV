@@ -1,5 +1,13 @@
 include(root.pri)
 
+
+INCLUDEPATH += E:\GithubProject\QtAV\ffmpeg\include  # 替换为你的实际路径
+LIBS += -LE:\GithubProject\QtAV\ffmpeg\lib\x64
+
+INCLUDEPATH += E:\ThirdPartyDataBase\ffmpeg\include  # 替换为你的实际路径
+LIBS += -LE:\ThirdPartyDataBase\ffmpeg\lib
+
+
 TEMPLATE = subdirs
 CONFIG -= ordered
 SUBDIRS = libqtav tools
